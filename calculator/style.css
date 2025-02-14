@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+button{
+    height: 100px;
+    width: 100px;
+    border: none;
+    background-color: rgb(224, 224, 224);
+    border-radius: 50px;
+    font-size: 30px;
+    margin: 20px 15px;
+}
+button:active{
+    animation: bt 0.18s linear 1;
+}
+@keyframes bt {
+    from{
+        background-color: rgb(224, 224, 224);
+    }
+    to{
+        background-color: black
+;
+color: white;    }
+}

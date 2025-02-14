@@ -20,11 +20,14 @@ let $point = document.getElementById('point')
 let strr = ""
 let strrr
 let hist
+let show = document.getElementById('qscreen')
 
 function onlickerclick(x) {
     strr = strr.concat(x)
     console.log(strr);
-
+    show.innerHTML=strr
+    show.style.fontSize="45px"
+    show.style.textAlign="center"
 }
 function outpusher() {
     strrr = eval(strr)
@@ -41,6 +44,9 @@ hist = `${strr} = ${strrr}`
 //      hist = hist +get
 //      localStorage.setItem("hist",JSON.stringify(hist))
 // }
+show.innerHTML=hist
+show.style.fontSize="45px"
+show.style.textAlign="center"
     strr = ""
 
 }
